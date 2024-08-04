@@ -37,6 +37,22 @@
 <body class="m-page">
 
     <div class="wrapper2" style="padding: 10px;">
+        <button data-modal="buyUpgradeModal" style="border: 2px solid #000; color: #000; margin-bottom: 20px;">
+            Buy upgrades
+        </button>
+        <button data-modal="processModal" style="border: 2px solid #000; color: #000; margin-bottom: 20px;">
+            Transaction is sent
+        </button>
+        <button data-modal="successModal" style="border: 2px solid #000; color: #000; margin-bottom: 20px;">
+            Purchase completed
+        </button>
+        <a href="mine.html" style="display: block; margin-bottom: 20px;">
+            Mine
+        </a>
+
+        <hr>
+        <br>
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Home
         </a>
@@ -52,8 +68,8 @@
         <a href="index5.html" style="display: block; margin-bottom: 20px;">
             Home 5
         </a>
-        <a href="mine.html" style="display: block; margin-bottom: 20px;">
-            Mine
+        <a href="boost.html" style="display: block; margin-bottom: 20px;">
+            Boost
         </a>
         <a href="referall.html" style="display: block; margin-bottom: 20px;">
             Referral
@@ -88,15 +104,55 @@
 
 
 
-    <div class="modal" id="Modal">
+    <div class="modal success-modal" id="successModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
+            <div class="modal__content">
+                <img src="img/success2.svg" alt="" class="success-modal__icon">
+                <div class="text20 semi-bold-text">
+                    Purchase completed
+                    successfully
                 </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
+                <div class="text14 gray-text">
+                    Level activation takes 2 minutes
+                </div>
+                <div class="progress-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal success-modal" id="processModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <img class="m-loader" src="img/loader3.svg" alt="">
+                <div class="text20 semi-bold-text">
+                    Transaction is sent
+                </div>
+                <div class="text14 gray-text">
+                    Please, wait for the network confirmation
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal success-modal buy-upgrade-modal" id="buyUpgradeModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <img class="buy-upgrade-modal__icon" src="img/coin.svg" alt="">
+                <div class="text20 semi-bold-text">
+                    Buy upgrades to earn more
+                </div>
+                <div class="buy-upgrade-modal__desc">
+                    <div class="text14">
+                        There are no free earnings now. Buy upgrades with 20% discount and earn up to 375% for 15 days
+                    </div>
+                </div>
+                <button class="buy-upgrade-modal__btn m-btn m-btn-blue">
+                    <span>Choose Upgrades</span>
                 </button>
             </div>
         </div>
